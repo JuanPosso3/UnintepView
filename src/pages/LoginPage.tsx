@@ -114,7 +114,7 @@ export function LoginPage() {
               GESTIÓN · CONTROL · SEGUIMIENTO
             </span>
             <span className="text-[11px] font-normal text-sky-200/60 tracking-normal">
-              Intitución Universitaria de Roldanillo - UNINTEP
+              Institución Universitaria de Roldanillo - UNINTEP
             </span>
           </footer>
         </div>
