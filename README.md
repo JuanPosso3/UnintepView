@@ -26,7 +26,7 @@ Toda la interfaz de usuario se encuentra en español. El acceso y autorización 
 - **Consulta con filtros combinables** para ambos roles:
   - Nombre del estudiante (búsqueda parcial).
   - Número de identificación (búsqueda parcial).
-  - Programa académico (`Sistemas`, `Electricidad`).
+  - Programa académico (`Sistemas`, `Diseño`).
   - Semestre (`1` a `10`).
   - Jornada (`Diurna`, `Nocturna`).
   - Tipo de incapacidad (`Médica`, `Laboral`, `Otra`).
@@ -107,12 +107,12 @@ Luego, en el **SQL Editor** de Supabase, ejecute `supabase/assign_roles.sql` sus
 -- 1. Rol administrativo para Unidad Académica
 update auth.users
 set raw_app_meta_data = coalesce(raw_app_meta_data, '{}'::jsonb) || jsonb_build_object('role', 'unidad_academica')
-where email = 'unidad.academica@unintep.edu.co';
+where email = 'correo.unidad@institucion.edu.co';
 
 -- 2. Rol de consulta para Docentes
 update auth.users
 set raw_app_meta_data = coalesce(raw_app_meta_data, '{}'::jsonb) || jsonb_build_object('role', 'docente')
-where email = 'docentes@unintep.edu.co';
+where email = 'correo.profesores@institucion.edu.co';
 ```
 
 Alternativamente, puede asignarlos desde la interfaz gráfica de Supabase:
