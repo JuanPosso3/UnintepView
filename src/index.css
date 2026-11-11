@@ -14,3 +14,9 @@ body {
 #root {
   min-height: 100svh;
 }
+
+/* Evitar controles de revelación duplicados en campos de contraseña */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}

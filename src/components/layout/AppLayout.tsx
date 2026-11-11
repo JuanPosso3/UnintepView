@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 const linkClass = ({ isActive }: { isActive: boolean }) =>
   cn(
     'rounded-md px-3 py-2 text-sm font-medium transition-colors',
-    isActive ? 'bg-white text-teal-900 shadow-xs' : 'text-teal-50 hover:bg-teal-700',
+    isActive ? 'bg-white text-[#005C9E] shadow-xs' : 'text-teal-50 hover:bg-[#004B80]',
   )
 
 export function AppLayout() {
@@ -14,12 +14,12 @@ export function AppLayout() {
 
   return (
     <div className="min-h-svh bg-slate-50">
-      <header className="bg-teal-800 text-white shadow-xs">
+      <header className="bg-[#005C9E] text-white shadow-xs">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-xs uppercase tracking-wide text-teal-100">Departamento académico</p>
-              <span className="inline-flex items-center rounded-full bg-teal-900/80 px-2 py-0.5 text-xs font-medium text-teal-100 border border-teal-700/60">
+              <span className="inline-flex items-center rounded-full bg-[#004B80]/80 px-2 py-0.5 text-xs font-medium text-white border border-white/20">
                 Rol: {roleLabel}
               </span>
             </div>
