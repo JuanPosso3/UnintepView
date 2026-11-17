@@ -18,7 +18,7 @@ export function AppLayout() {
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <div className="flex flex-wrap items-center gap-2">
-              <p className="text-xs uppercase tracking-wide text-teal-100">Departamento académico</p>
+              <p className="text-xs uppercase tracking-wide text-teal-100">Facultad de Ingenierías</p>
               <span className="inline-flex items-center rounded-full bg-[#004B80]/80 px-2 py-0.5 text-xs font-medium text-white border border-white/20">
                 Rol: {roleLabel}
               </span>

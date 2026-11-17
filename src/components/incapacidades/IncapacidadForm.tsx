@@ -26,7 +26,10 @@ export function IncapacidadForm({
   cancelLabel = 'Cancelar',
   resetOnSuccess = true,
 }: Props) {
-  const [form, setForm] = useState<IncapacidadFormData>(initialValues)
+  const [form, setForm] = useState<IncapacidadFormData>({
+  ...initialValues,
+  observaciones: initialValues.observaciones || 'Cualquier inquietud en la Unidad Académica',
+  })
   const [errors, setErrors] = useState<FieldErrors>({})
   const [saving, setSaving] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
@@ -60,7 +63,10 @@ export function IncapacidadForm({
       await onSubmit(form)
       setSuccess('La incapacidad se guardó correctamente.')
       if (resetOnSuccess) {
-        setForm(EMPTY_FORM)
+        setForm({
+          ...EMPTY_FORM,
+          observaciones: 'Cualquier inquietud en la Unidad Académica',
+        })
         setErrors({})
       }
     } catch (error) {

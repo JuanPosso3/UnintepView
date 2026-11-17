@@ -74,10 +74,10 @@ export function LoginPage() {
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-white">
-                SISTEMA ACADÉMICO
+                SISTEMA ADMINISTRATIVO
               </p>
               <p className="text-[11px] font-medium text-sky-200/70 tracking-wider uppercase">
-                Departamento Académico
+                Facultad de Ingenierías
               </p>
             </div>
           </header>
